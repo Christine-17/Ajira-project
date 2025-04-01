@@ -1,0 +1,124 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+   <style>
+    /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Navigation */
+header {
+    background: linear-gradient(to right, red, black, green);
+    padding: 15px 0;
+}
+
+/* Style the navigation bar */
+nav {
+    background: linear-gradient(to right, red, black, green); /* Smooth blend */
+    padding: 12px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Style the links */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover effect */
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light transparent overlay */
+    text-decoration: underline;
+}
+
+/* Active link styling */
+nav a.active {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    padding: 10px 15px;
+}
+
+
+/* Photo Gallery Section */
+.content {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.content h1 {
+    color: red;
+    margin-bottom: 20px;
+}
+
+/* Gallery Grid */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+   </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{% url 'about' %}">About Us</a>  
+            <a href="{% url 'photos' %}">Photos</a>  
+            <a href="{% url 'contact' %}">Contact Us</a>  
+        </nav>
+    </header>
+
+    <section class="content">
+        <h1>Photo Gallery</h1>
+        <div class="gallery">
+            <img src="{% static 'ttnp logo.jpg' %}" alt="TTNP Image">
+            <img src="{% static 'Ajira digital club logo.jpg' %}" alt="Project 2">
+            <img src="{% static 'emobilis.jpg' %}" alt="Project 3">
+            
+        </div>
+    </section>
+</body>
+</html>

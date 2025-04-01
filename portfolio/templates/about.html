@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Navigation */
+header {
+    background: linear-gradient(to right, red, black, green);
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, .active {
+    background: white;
+    color: black;
+}
+
+/* About Us Section */
+.content {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.content h1 {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="photos.html">Photos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h1>About Us</h1>
+        <p>Welcome to the official website of <strong>Ajira Club TTNP</strong>, a dynamic community of passionate tech enthusiasts, developers, and innovators.</p>
+        
+        <p>At <strong>Ajira Club TTNP</strong>, we are dedicated to empowering young minds with digital skills, fostering collaboration, and creating opportunities in the world of technology. Our mission is to bridge the digital gap by equipping members with real-world tech expertise, enabling them to excel in today's fast-paced digital economy.</p>
+        
+        <p>We specialize in web development, software engineering, data science, cybersecurity, and digital entrepreneurship. Our team works on innovative projects that solve real-world problems, creating impactful digital experiences for businesses, individuals, and communities.</p>
+        
+        <p>Through mentorship, hands-on training, and industry collaborations, we strive to nurture future tech leaders. Whether you are a beginner or an advanced developer, Ajira Club TTNP is the perfect place to learn, grow, and build your career in technology.</p>
+        
+        <p>Join us in shaping the future of tech—one innovation at a time!</p>
+    </section>
+</body>
+</html>

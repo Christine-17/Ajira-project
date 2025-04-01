@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+   <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(245, 202, 202, 0.2);;
+        color: black;
+        text-align: center;
+    }
+    
+    header {
+        background: linear-gradient(to right, red, black, green);
+        padding: 15px;
+        text-align: center;
+    }
+    
+    /* Style the navigation bar */
+    nav {
+        background: linear-gradient(to right, red, black, green); /* Smooth blend */
+        padding: 12px;
+        text-align: center;
+        border-radius: 8px;
+    }
+    
+    /* Style the links */
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0 15px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: 0.3s ease-in-out;
+    }
+    
+    /* Hover effect */
+    nav a:hover {
+        background-color: rgba(255, 255, 255, 0.2); /* Light transparent overlay */
+        text-decoration: underline;
+    }
+    
+    /* Active link styling */
+    nav a.active {
+        background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+        padding: 10px 15px;
+    }
+    
+    
+    .content {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    p {
+        font-size: 18px;
+        color: black;
+    }
+    /* Style the container */
+    div {
+        background-color: #f8f9fa; /* Light grey background */
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        margin: 20px auto;
+    }
+    
+    /* Style the paragraph */
+    div p {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    /* Style links */
+    div a {
+        display: block;
+        text-decoration: none;
+        font-size: 14px;
+        color: #007bff; /* Blue links */
+        font-weight: bold;
+        padding: 5px 0;
+        transition: 0.3s;
+    }
+    
+    /* Hover effect */
+    div a:hover {
+        color: #0056b3;
+        text-decoration: underline;
+    }
+    
+    /* Style active link */
+    div a.active {
+        color: #28a745; /* Green for active link */
+        font-weight: bold;
+    }
+    
+    /* Style the register link */
+    div a:last-child {
+        display: inline-block;
+        background-color: #007bff;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    
+    div a:last-child:hover {
+        background-color: #0056b3;
+    }
+     
+   </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{% url 'about' %}">About Us</a>  
+            <a href="{% url 'photos' %}">Photos</a>  
+            <a href="{% url 'contact' %}">Contact Us</a>  
+        </nav>
+    </header>
+
+    <section class="content">
+        <h1>Contact Us</h1>
+        <p>📍 Location: Voi, Kenya</p>
+        <p>📧 Email: ajiraclubttnp@gmail.com</p>
+        <p>📞 Phone: +254 769 084 760</p>
+    </section>
+
+    <div> <p>Follow us on social media for updates and projects.</p>
+        
+           <a href="https://whatsapp.com/channel/0029VajeyPE7oQhXvyssXZ3H">What's App Channel</a><br>
+           <a href="{% url 'contact' %}">Contact Us</a><br>
+           <a href="{% url 'photos' %}">Photos</a>
+        
+    
+   Register now <a href="https://forms.gle/ZVGe6xcvwxNsTkhq7">Click Here</a>
+    </div>
+</body>
+</html>
